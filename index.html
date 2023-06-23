@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <nav class="theme" id="theme">
+        <div class="containerNavbar">
+            <button class="cyberpunk" id="btnCyber" onclick="btnC()">CYBERPUNK</button>
+            <button class="aesthetic" id="btnAesthetic" onclick="btnA()">AESTHETIC</button>
+            <button class="nature" id="btnNature" onclick="btnN()">NATURE</button>
+        </div>
+    </nav>
+<section id="cyberpunk">
+    <div class="containerCyberpunk">
+        <div class="layer1Cyberpunk">
+            <div class="output1Cyberpunk">
+                <input type="text" id="output2C" placeholder="" disabled>
+            </div>
+            <div class="containerNomerC">
+                <div class="symbolC" onclick="clearResultC()">C</div>
+                <div class="symbolC" onclick="performOperatorC('+')">+</div>
+                <div class="symbolC" onclick="performOperatorC('-')">-</div>
+                <div class="symbolC" onclick="performOperatorC('*')">x</div>
+                <div class="symbolC" onclick="performOperatorC('/')">/</div>
+                <div class="nomerC" onclick="appendValueC(1)">1</div>
+                <div class="nomerC" onclick="appendValueC(2)">2</div>
+                <div class="nomerC" onclick="appendValueC(3)">3</div>
+                <div class="nomerC" onclick="appendValueC(4)">4</div>
+                <div class="nomerC" onclick="appendValueC(5)">5</div>
+                <div class="nomerC" onclick="appendValueC(6)">6</div>
+                <div class="nomerC" onclick="appendValueC(7)">7</div>
+                <div class="nomerC" onclick="appendValueC(8)">8</div>
+                <div class="nomerC" onclick="appendValueC(9)">9</div>
+                <div class="nomerC" onclick="appendValueC(0)">0</div>
+                <div class="symbolC" onclick="calculateC()">=</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- AESHTETIC -->
+<section id="aesthetic">
+    <div class="containerAesthetic">
+        <div class="layer1Aesthetic">
+            <div class="output1Aesthetic">
+                <input type="text" id="output2A" placeholder="" disabled>
+            </div>
+            <div class="containerNomerA">
+                <div class="symbolA" onclick="clearResultA()">C</div>
+                <div class="symbolA" onclick="performOperatorA('+')">+</div>
+                <div class="symbolA" onclick="performOperatorA('-')">-</div>
+                <div class="symbolA" onclick="performOperatorA('*')">x</div>
+                <div class="symbolA" onclick="performOperatorA('/')">/</div>
+                <div class="nomerA" onclick="appendValueA(1)">1</div>
+                <div class="nomerA" onclick="appendValueA(2)">2</div>
+                <div class="nomerA" onclick="appendValueA(3)">3</div>
+                <div class="nomerA" onclick="appendValueA(4)">4</div>
+                <div class="nomerA" onclick="appendValueA(5)">5</div>
+                <div class="nomerA" onclick="appendValueA(6)">6</div>
+                <div class="nomerA" onclick="appendValueA(7)">7</div>
+                <div class="nomerA" onclick="appendValueA(8)">8</div>
+                <div class="nomerA" onclick="appendValueA(9)">9</div>
+                <div class="nomerA" onclick="appendValueA(0)">0</div>
+                <div class="symbolA" onclick="calculateA()">=</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- NATURE -->
+<section id="nature">
+    <div class="containerNature">
+        <div class="layer1Nature">
+            <div class="output1Nature">
+                <input type="text" id="output2N" placeholder="" disabled>
+            </div>
+            <div class="containerNomerN">
+                <div class="symbolN" onclick="clearResultN()">C</div>
+                <div class="symbolN" onclick="performOperatorN('+')">+</div>
+                <div class="symbolN" onclick="performOperatorN('-')">-</div>
+                <div class="symbolN" onclick="performOperatorN('*')">x</div>
+                <div class="symbolN" onclick="performOperatorN('/')">/</div>
+                <div class="nomerN" onclick="appendValueN(1)">1</div>
+                <div class="nomerN" onclick="appendValueN(2)">2</div>
+                <div class="nomerN" onclick="appendValueN(3)">3</div>
+                <div class="nomerN" onclick="appendValueN(4)">4</div>
+                <div class="nomerN" onclick="appendValueN(5)">5</div>
+                <div class="nomerN" onclick="appendValueN(6)">6</div>
+                <div class="nomerN" onclick="appendValueN(7)">7</div>
+                <div class="nomerN" onclick="appendValueN(8)">8</div>
+                <div class="nomerN" onclick="appendValueN(9)">9</div>
+                <div class="nomerN" onclick="appendValueN(0)">0</div>
+                <div class="symbolN" onclick="calculateN()">=</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="main.js"></script>    
+</body>
+</html>
